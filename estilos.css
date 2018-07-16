@@ -1,0 +1,925 @@
+/* estilos.css */
+
+:root{
+	--negroVerdadero: #000;
+	--blanco: #FFF;
+	--azulBotonera:#045ba3;
+	--azulOscuro: #003460;
+	--azulClaroConOpacidad:rgba(222,237,250,0.4);
+}
+
+*{
+	/*Elimino caracteristicas que vienen por defecto*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Russo One', sans-serif;
+	
+}
+
+h1{
+	font-size: 48px;
+	font-size: 3rem;
+	color: var(--azulBotonera);
+}
+h2{
+	font-size: 44px;
+	font-size: 2.75rem;
+}
+h3{
+	font-size: 30px;
+	font-size: 1.875rem;
+}
+h4{
+	font-size:18px;
+	font-size: 1.125rem;
+	
+}
+a{
+	text-decoration: none;
+}
+
+
+/*----------------------------
+
+SECCION CABECERA
+
+------------------------------*/
+.cabecera{
+		
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 1122px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1vw;
+	width:100%;
+}
+
+/* IMAGEN RESPONSIVE*/
+
+.cabecera-imagen{
+	max-width: 230px;
+	width:20%;
+}
+
+.cabecera-imagen img{
+	width: 100%;
+	height: auto;
+}
+
+.cabecera-texto{
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 70%;
+}
+
+.cabecera-texto h1{
+	margin-left: 4.45vw;
+	
+}
+.cabecera-texto h2{
+	margin-left: 2.22vw;
+	
+}
+
+.cabecera h3{
+	width: 100%;
+	text-align: center;
+	margin-top: 1vw;
+}
+
+.contenedor{
+	margin: auto;
+}
+
+/*----------------------------
+
+SECCION BOTONERA
+
+------------------------------*/
+
+.botonera{
+	
+	
+	background-color: var(--azulBotonera);
+	margin: 0 auto;
+	
+	/* DOS LINEAS AGREGADAS PARA QUE LA BOTONERA BAJE CON EL SCROLL, ME SIGA */
+	position: sticky;
+	top:0;
+	z-index:1;
+	
+}
+
+.botonera-lista{
+	
+	/* COMO EL FONDO PUEDE MEDIR TODO EL ANCHO , LIMITO EL ANCHO DE MI MENU 
+		Y LO CENTRO, PERO NO ASI SU FONDO DECLARADO EN .BOTONERA */
+	max-width: 1122px;  
+	margin-left: auto;
+	margin-right: auto;
+	
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.botonera-lista a{
+	
+	color: var(--blanco);
+	font-size: 20px;
+	font-size: 1.25rem;
+	padding: 10px 5px;
+	display: block;  
+	
+	text-align:center;
+	
+}
+
+.botonera-lista a:hover{
+	color: var(--negroVerdadero);
+}
+
+.toggle{
+	display:none;
+	background: none;
+	border: none;
+	
+}
+
+/*----------------------------
+
+SECCION SLIDER
+
+------------------------------*/
+
+.slider{
+	position: relative;
+	margin-bottom: 4vw;
+	max-width:1122px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+.slider img{
+	max-width:1122px;
+	width: 100%;
+}
+.slider-texto{
+	
+	text-align: right;
+	
+	/* Ancho maximo del texto */
+	max-width: 50%;
+	
+	/* posicion del texto dentro del contenedor */
+	position: absolute;
+	top: 3.5vw;
+	right:4vw;
+	
+	color: var(--blanco);
+	
+	font-size: 22px;
+	font-size: 1.375rem;
+}
+
+
+
+/*----------------------------
+
+SECCION CENTRO
+
+------------------------------*/
+
+
+.centro{
+	max-width: 1122px;  
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5vw;
+}
+
+.centro h3{
+	color: var(--azulBotonera);
+	text-align:center;
+
+}
+
+.centro-botones img{
+	max-width: 15vw;
+}
+
+
+.centro-botones{
+	margin-top: 4vw;
+	display: flex;
+	justify-content: space-around; 
+	
+}
+
+.centro-botones-uno,.centro-botones-dos,.centro-botones-tres{
+	text-align:center;
+	box-shadow: 0 0 0 1px var(--azulOscuro);
+	max-width: 240px;
+	color: var(--azulBotonera);
+	width: 30%;
+}
+.centro-botones-uno:hover,.centro-botones-dos:hover,.centro-botones-tres:hover{
+	
+	
+	box-shadow: 0 0 0 5px var(--azulOscuro);
+	
+	color: var(--azulOscuro);
+	
+}
+/*----------------------------
+
+SECCION CONTENIDO - QUIENES SOMOS
+
+------------------------------*/
+
+.contenido{
+	position: relative;
+	max-width: 1122px;
+	margin: 0 auto;
+	color: var(--negroVerdadero);
+	background-color: #dcd4d1;
+	width: 100%;
+}
+
+.contenido img{
+	
+	opacity: 0.8;
+	max-width: 1122px;
+	width: 100%;
+}
+.contenido-interno{
+	
+	position: absolute;
+	top: 2vw;
+	left: 2vw;
+	right:2vw;
+	background-color: var(--azulClaroConOpacidad);
+	padding: 2vw;
+	border-radius: 2px;
+	text-align: justify;
+		
+}
+
+.contenido-interno h3, .contenido-interno p{
+	opacity:0;
+	padding: 1vw;
+	animation-name: quienes;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-play-state:running;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+.contenido-interno_lineaV{
+	position:absolute;
+	top: 2vw;
+	left: 1.5vw;
+	background-color: var(--azulBotonera);
+	animation-name: lineaV-quienes;
+	animation-duration:1.5s;
+	animation-timing-function:linear;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+}
+.contenido-interno_lineaH{
+	position:absolute;
+	top: 2vw;
+	left: 1.5vw;
+	background-color: var(--azulBotonera);
+	animation-name: lineaH-quienes;
+	animation-duration:1.5s;
+	animation-timing-function:linear;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+}
+
+/*TERMINA SECCION CONTENIDO PAGINA QUIENES SOMOS */
+
+
+
+
+/*--------------CONTACTO-----------*/
+.contacto{
+	position:relative;
+	max-width:1122px;
+	margin: auto;
+}
+.contacto > img{
+	
+	width:100%;
+	
+}
+
+.contacto-formulario{
+	position:absolute;
+	top: 5vw;
+	right:5vw;
+	left:5vw;
+	background-color: var(--azulClaroConOpacidad);
+	display:flex;
+	justify-content: space-around;
+}
+.contacto-formulario-sobre{
+	width:40%;
+	height:40%;
+	align-self:center;
+}
+.copy-sobre{
+	color:var(--blanco);
+	font-size:0.6rem;
+	text-align:right;
+	display:block;
+}
+
+
+.contacto-formulario img{
+	width:100%;
+	transform:translateY(-50vw);
+	opacity:0;
+	align-self:center;
+	animation-name: contactoSobre;
+	animation-duration:1s;
+	animation-timing-function:ease-out;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+}
+
+
+	
+
+.contacto-formulario h3{
+	position: absolute;
+	top: 1vw;
+	left: 3vw;
+	opacity: 0;
+	animation-name: contacto;
+	animation-duration:1.5s;
+	animation-timing-function:linear;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+}
+
+.contacto-formulario form{
+	
+	flex-direction: column;
+	width:40%;
+	opacity:0;
+	animation-name: contacto;
+	animation-duration:1.5s;
+	animation-timing-function:linear;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+}
+.contacto-formulario form input, .contacto-formulario form textarea{
+	margin-bottom:1vw;
+	width:100%;
+	font-size:1.5rem;
+	
+}
+.validar:invalid{
+	border: 3px solid red;
+	
+}
+.validar:valid{
+	border: 3px solid green;
+}
+
+.foco{
+	box-shadow: inset 1px 1px 5px 1px var(--azulBotonera); 
+}
+
+.contacto-formulario form textarea{
+	height: 10vw;
+}
+
+.enviado{
+	background-color: var(--azulClaroConOpacidad);
+}
+
+
+/*--------------SERVICIOS-----------*/
+
+.servicios{
+	max-width: 1122px;
+	width:100%;
+	margin: auto;
+	
+}
+.servicios-titulo{
+	border-top: 1px solid var(--azulBotonera);
+	margin-top: 3vw;
+	text-align:center;
+}
+.servicios h3{
+	position:relative;
+	top:-20px;
+	padding-left:2vw;
+	padding-right:2vw;
+	background-color: var(--blanco);
+	display: inline;	
+}
+
+.row{
+	max-width:1122px;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:4vw 0;
+	border-bottom: 1px solid var(--azulBotonera);;
+}
+
+.column-texto{
+	width:50%;
+	padding: 0 2vw;
+	text-align:justify;
+}
+.column-img{
+	width:40%;
+}
+.column-img img{
+	width:80%;
+}
+/*--------------------OUTLET----------------*/
+.outlet{
+	max-width: 1122px;
+	padding: 2vw;	
+	color: var(--negroVerdadero);
+	margin:auto;
+	
+}
+
+.categorias{
+	float: left;
+	
+	padding: 1.5rem;
+	width:25%;
+}
+.categorias-lista{
+	list-style: none;
+	display:flex;
+	flex-direction: column;
+	font-size:0.8rem;
+	padding: 1.5rem;
+	
+	
+}
+.categorias-lista li{
+	padding: 0.5rem 0;
+}
+.categorias-lista a{
+	transition: padding-left 0.4s;
+	text-decoration: none;
+}
+.categorias-lista a:hover{
+	padding-left: 0.8rem;
+	color: var(--negroVerdadero);
+}
+
+.productos{
+	width: 75%;
+	float:right;
+	text-align: center;
+	padding-top: 1.5rem;
+	border-left: 1px solid var(--azulBotonera);
+	padding-left: 1.5rem;
+}
+.productos table{
+	padding: 2rem 0;
+	margin:auto;
+	
+}
+
+
+.productos-tabla img{
+	width: 80%;
+	padding: 0.5rem;
+}
+
+.productos-tabla{
+	width:20vw;
+	padding: 1rem;
+	border: 1px solid var(--negroVerdadero);
+	
+}
+
+.no-tenemos{
+	padding:4rem;
+}
+
+
+.productos-busqueda{
+	text-transform: uppercase;
+}
+.formulario-busqueda input{
+	max-width: 90%;
+	height:1.8rem;
+	font-size:1rem;
+}
+
+
+
+/*----------------------------
+
+SECCION FOOTER
+
+------------------------------*/
+
+.piefondo{
+	max-width:1366px;
+	background-color: var(--azulBotonera);
+	margin: auto;
+	clear:both;                 /*AGREGADO EN EL DESARROLLO DE OUTLET *********************************************/
+}
+.pie{
+	
+	max-width: 1122px;  
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-around;
+	
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-top: 2vw;
+	padding-bottom: 0;
+}
+
+/*LADO IZQUIERDO DEL FOOTER*/
+
+.pie-mapa{	
+	width: 40%;
+	border: 2px solid var(--blanco);
+	height: 100%;
+	text-align: center;
+	color: var(--blanco);
+	padding: 1.5vw;
+	
+}
+#map{
+	height: 25vw;
+	
+}
+.pie-mapa h4, .pie-mapa p{
+	padding-bottom: 1vw;
+	
+}
+
+.pie-mapa p{
+	padding-top: 1vw;
+}
+
+
+/*LADO DERECHO DEL FOOTER*/
+
+.pie-derecha{
+	
+	
+	color: var(--blanco);
+	
+	font-size: 22px;
+	font-size:  1.375rem;
+	
+	text-align: right;
+	max-width: 50%;
+	
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.pie-derecha-texto{
+	padding-bottom: 2.5vw;
+	
+}
+
+.pie-derecha-telefono{
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+	
+	font-size: 24px;
+	font-size: 1.5rem;
+}
+.pie-derecha-telefono img{
+	height: 3vw;
+	width: 3vw;
+	margin-right: 1vw;
+}
+
+.email{
+	font-size: 24px;
+	font-size: 1.5rem;
+}
+
+/* CREDITOS */
+
+
+.creditos{
+	margin-top:1vw;
+	border-top: 1px solid var(--blanco);
+	color: var(--blanco);
+	font-family: cursive;
+	font-size: 24px;
+	font-size: 1.5rem;
+	padding-right: 2vw;
+	padding-bottom: 2vw;
+	text-align: right;
+}
+
+/*----------------------------
+
+MEDIA QUERIES
+
+------------------------------*/
+
+
+@media (max-width:970px){
+	html{
+		font-size: 14px;
+	}
+	
+}
+
+@media (max-width:850px){
+	html{
+		font-size: 13px;
+	}
+	
+}
+
+@media (max-width:790px){
+	html{
+		font-size: 12px;
+	}
+	
+	
+	
+	.pie{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		padding-bottom: 0;
+	}
+	.pie-mapa{
+		width:70%;
+		margin-top: 2vw;
+	}
+	
+	#map{
+	height: 40vw;
+	
+	}
+	
+	.pie-derecha{
+		text-align: center;
+		max-width: 80%;
+	}
+	.pie-derecha-telefono{
+		justify-content: center;
+		font-size: 2rem;
+	}
+	.email{
+		font-size: 2rem;
+	}
+	
+}
+
+@media (max-width:730px){
+	html{
+		font-size:11px;
+	}
+	
+	.servicios-titulo {
+		margin-top:4vw;
+	
+	}
+	.servicios-titulo h3{
+		top:-11px;
+	}
+}
+
+@media (max-width:675px){
+	html{
+		font-size:10px;
+	}
+}
+
+
+@media (max-width:610px){
+	html{
+		font-size: 9px;
+	}
+	
+	/* ***MENU HAMBURGUESA ***/
+	.botonera{
+		position: relative;
+		width: 100%;
+		margin: 0;
+		
+	}
+
+	
+	.botonera-lista{
+		flex-direction: column;
+		width: 40vw;
+		opacity: 0;
+		
+		/*TRANSICION ENTRADA DE MENU LATERAL ***************/
+		transform: translateX(-40vw);
+		transition: opacity 1s, transform 1s;  
+		
+		position: absolute;
+		/*PARA QUE FUNCIONE TRANSICION CAMBIE EL DISPLAY NONE POR EL BLOCK*/
+		display: block; 
+		background-color: var(--azulBotonera);
+
+	}
+		
+	.botonera-lista li:nth-child(1){
+		border-top: 1px solid var(--blanco);
+	}
+	.botonera-lista a{
+		border-bottom: 1px solid var(--blanco);
+	}
+	.toggle{
+		display: inline;
+		width: 75px;
+		text-align: left;
+	}
+	.toggle::after{
+		content:"MENU";
+		position: absolute;
+		color: var(--blanco);
+		height:24px;
+		top: 6px;
+		left: 30px;
+		font-size: 10px;
+	}
+	
+		
+	/* ***  TERMINA MENU HAMBURGUESA ***/
+	
+	/*CAMBIO POSICION DE BOTONES CENTRO*/
+	h3{
+		font-size:2rem;
+	}
+	.centro-botones{
+		flex-direction:column;
+		align-items: center;
+		margin: auto;
+		margin-top: 10px;
+		
+	}
+	h4{
+		font-size: 1.7rem;
+	}
+	.centro img{
+		max-width:25vw;
+		
+	}
+	.centro-botones-uno, .centro-botones-dos{
+		margin-bottom: 10px;
+		
+		width: 60%;
+		font-size: 1.5rem;
+	}
+	.centro-botones-tres{
+		width: 60%;
+		font-size: 1.5rem;
+	}
+	
+	.contenido-interno p{
+		font-size:1.2rem;
+	}
+	
+	
+}
+
+@media (max-width:555px){
+	html{
+		font-size: 8px;
+	}
+	
+		
+}
+@media (max-width:495px){
+	html{
+		font-size: 7px;
+	}
+	
+}
+@media (max-width:440px){
+	html{
+		font-size: 6px;
+	}
+	.contenido-interno p{
+		font-size: 1rem;
+	}
+	h3{
+		font-size:1.5rem;
+	}
+}
+@media (max-width:300px){
+	body{
+		width:300px;
+	}
+	
+	.servicios-titulo h3{
+		top:-8px;
+	}
+	
+}
+/* CLASE PARTE DEL MENU HAMBURGUESA QUE SE AGREGA A LA BOTONERA-LISTA CON JAVASCRIPT CUANDO SE HACE CLICK */
+.mostrar{
+	/* display: flex; LO DESACTIVE PARA QUE FUNCIONE ENTRADA LATERAL DE MENU */
+	opacity:1;
+	transform: translateX(0);
+}
+
+/*----------------------------
+
+KEYFRAMES
+
+------------------------------*/
+
+@keyframes quienes{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+	
+}@keyframes lineaV-quienes{
+	from{
+		width:1px;
+		height:1px;
+	}
+	
+	to{
+		width:1px;
+		height:85%;
+	}
+	
+}
+
+@keyframes lineaH-quienes{
+	from{
+		width:1px;
+		height:1px;
+	}
+	
+	to{
+		width:95%;
+		height:1px;
+		
+	}
+	
+}
+
+@keyframes contacto{
+	from{
+		opacity:0;
+	}
+	
+	to{
+		opacity:1;
+		
+	}
+	
+}
+@keyframes contactoSobre{
+	0%{
+		opacity:0;
+	}
+	
+	50%{
+		opacity:0;
+	}
+	100%{
+		transform:translateY(0);
+		opacity:1;
+	}
+	
+}
+
