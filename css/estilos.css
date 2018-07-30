@@ -111,7 +111,7 @@ SECCION BOTONERA
 	/* DOS LINEAS AGREGADAS PARA QUE LA BOTONERA BAJE CON EL SCROLL, ME SIGA */
 	position: sticky;
 	top:0;
-	z-index:1;
+	z-index:3;
 	
 }
 
@@ -158,37 +158,15 @@ SECCION SLIDER
 
 ------------------------------*/
 
-.slider{
-	position: relative;
-	margin-bottom: 4vw;
-	max-width:1122px;
-	margin-left: auto;
-	margin-right: auto;
-	
+.swiper-container {
+    max-width: 1122px;
+}
+.swiper-container img{
+	margin: auto;
+	width:100%;
 }
 
 
-.slider img{
-	max-width:1122px;
-	width: 100%;
-}
-.slider-texto{
-	
-	text-align: right;
-	
-	/* Ancho maximo del texto */
-	max-width: 50%;
-	
-	/* posicion del texto dentro del contenedor */
-	position: absolute;
-	top: 3.5vw;
-	right:4vw;
-	
-	color: var(--blanco);
-	
-	font-size: 22px;
-	font-size: 1.375rem;
-}
 
 
 

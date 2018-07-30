@@ -1,10 +1,16 @@
 <!doctype html>
 <html lang="es">
 	<head>
-		<title>RLG Servicio Tecnico</title>
+		<title>RLG Contacto</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-		<link href="estilos.css" rel="stylesheet">
+		<meta name="description" content="Reparacion y mantenimiento de computadoras, notebooks y all in one " />
+		<meta name="keywords" content="contacto, reparacion de computadoras, service, mantenimiento, " />
+		<meta name="author" content="RLG Informatica" />
+		<meta name="robots" content="index, follow" >
+		
+	
+		<link href="css/estilos.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 		<link rel="icon" href="imagenes/favicon.png" type="image/png">
 		<!-- Mapa con GOOGLE MAPS API -->

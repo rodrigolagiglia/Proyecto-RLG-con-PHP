@@ -1,10 +1,15 @@
 <!doctype html>
 <html lang="es">
 	<head>
-		<title>RLG Servicio Tecnico</title>
+		<title>RLG Outlet Usados</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-		<link href="estilos.css" rel="stylesheet">
+		<meta name="description" content="Reparacion y mantenimiento de computadoras, notebooks y all in one " />
+		<meta name="keywords" content="equipos usados, repuestos usados, componentes, AMD, Windows, Intel, venta de computadoras, notebooks, memorias ram, discos, cpu, placas de video, mother, procesadores" />
+		<meta name="author" content="RLG Informatica" />
+		<meta name="robots" content="index, follow" >
+		
+		<link href="css/estilos.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 		<link rel="icon" href="imagenes/favicon.png" type="image/png">
 		<!-- Mapa con GOOGLE MAPS API -->

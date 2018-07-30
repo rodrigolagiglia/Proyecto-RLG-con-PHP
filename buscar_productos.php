@@ -1,10 +1,14 @@
 <!doctype html>
 <html lang="es">
 	<head>
-		<title>RLG Servicio Tecnico</title>
+		<title>RLG Outlet Usados</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-		<link href="estilos.css" rel="stylesheet">
+		
+		<meta name="author" content="RLG Informatica" />
+		<meta name="robots" content="noindex, nofollow" >
+		
+		<link href="css/estilos.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 		<link rel="icon" href="imagenes/favicon.png" type="image/png">
 		<!-- Mapa con GOOGLE MAPS API -->

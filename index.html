@@ -4,8 +4,14 @@
 		<title>RLG Servicio Tecnico</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<meta name="description" content="Reparacion y mantenimiento de computadoras, notebooks y all in one " />
+		<meta name="keywords" content="reparacion de computadoras, reparacion de monitores, service, reparacion de notebooks, AMD, Windows, Office, Intel, venta de computadoras, repuestos" />
+		<meta name="author" content="RLG Informatica" />
+		<meta name="robots" content="index, follow" >
+		
 		<link rel="icon" href="imagenes/favicon.png" type="image/png">
-		<link href="estilos.css" rel="stylesheet">
+		<link href="css/estilos.css" rel="stylesheet">
+		<link href="css/swiper.css" rel="stylesheet"> <!-- swiper estilos -->
 		<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 	
 		<!-- Mapa con GOOGLE MAPS API -->
@@ -65,15 +71,25 @@
 			</nav> 	<!-- Cierra .botonera -->
 			
 			
-			<div class="slider">				
-				
-				<p class="slider-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, tur adipisicing elit, 
-				tur adipisicing elit, tur adipisicing elit, tur adipisicing elit, sed dididunt ut labore et dolo eiusmod 
-				tempor incididunt ut labore et dolore magna aliqididunt ut labore et dolua. Ut enim ad minim veniam, quis nostrud </p>
-				
-				<img src="imagenes/imagen-slider-1.png" alt="">
-				
+			<div class="swiper-container">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide"><img src="imagenes/SLIDE1.png" alt=""></div>
+					<div class="swiper-slide"><img src="imagenes/SLIDE2.png" alt=""></div>
+					<div class="swiper-slide"><img src="imagenes/SLIDE3.png" alt=""></div>
+					
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+
 			</div>	<!-- Cierra .slider -->	
+			
+			
 			
 			<div class="centro">
 				<h3>¿POR QUÉ ELEGIRNOS?</h3>
@@ -134,8 +150,32 @@
 			
 		</div>   <!-- Cierra contenedor -->
 		
-		<script src="js/hamburguesa.js"></script>  <!--ENLAZO JAVASCRIPT PARA EL MENU HAMBURGUESA -->
 		
+		
+		<script src="js/hamburguesa.js"></script>  <!--ENLAZO JAVASCRIPT PARA EL MENU HAMBURGUESA -->
+		<script src="js/swiper.js"></script> <!-- ENLAZO JS SWIPER -->
+		<script> <!-- INICIALIZO SWIPER -->
+		  var mySwiper = new Swiper ('.swiper-container', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: true,
+
+			// If we need pagination
+			pagination: {
+			  el: '.swiper-pagination',
+			},
+
+			// Navigation arrows
+			navigation: {
+			  nextEl: '.swiper-button-next',
+			  prevEl: '.swiper-button-prev',
+			},
+			autoplay: {
+				delay: 2500,
+			  },
+
+		  })
+		</script>
 	</body>
 
 
